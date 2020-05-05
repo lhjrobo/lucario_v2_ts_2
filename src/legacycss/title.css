@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: #363636;
+}
+body {
+  background-color: #f2f2f2;
+  color: #363636;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 200vh;
+  margin: 0px;
+  padding: 0;
+}
+.title {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    ". ."
+    "logo description"
+    ". .";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50vh 1fr;
+}
+.logo {
+  align-self: center;
+  justify-self: center;
+  grid-area: logo;
+  height: 50vh;
+}
+.title_description {
+  grid-area: description;
+  display: inline-block;
+  text-align: right;
+  justify-self: center;
+  align-self: flex-end;
+}
+.title_description .title_date {
+  display: block;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 3%;
+}
+.title_description .title_whoweare_japanese {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.title_description .title_whoweare_english {
+  display: block;
+}

@@ -1,0 +1,81 @@
+.page2_margin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+}
+.page2 {
+  display: grid;
+  grid-template-areas:
+    "greetings "
+    " yam_logo "
+    " button";
+  grid-template-rows: 40vh 40vh 20vh;
+  justify-content: center;
+  font-size: 100%;
+  position: relative;
+}
+.greetings {
+  grid-template-areas: "japanese . english";
+  grid-template-columns: 1fr 3vw 1fr;
+  grid-area: greetings;
+  display: grid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.greetings .greetings_japanese {
+  grid-area: japanese;
+  justify-content: center;
+  font-size: 60%;
+  font-weight: bold;
+  line-height: 200%;
+  letter-spacing: 1px;
+}
+.greetings .greetings_english {
+  grid-area: english;
+  justify-content: center;
+  font-size: 60%;
+  font-weight: bold;
+  line-height: 200%;
+  letter-spacing: 0.5px;
+}
+.greetings .greetings_japanese .greetings_japanese_title {
+  text-align: right;
+  font-size: 150%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.greetings .greetings_english .greetings_english_title {
+  font-size: 150%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.sketch_yam {
+  grid-area: yam_logo;
+  justify-self: center;
+  width: 30vw;
+}
+.sketch_yam_image {
+  width: 30vw;
+  height: 15vw;
+}
+.button_gallery {
+  grid-area: button;
+  justify-self: center;
+  width: 20vw;
+  height: 5vh;
+}
+.button_gallery_box {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-color: #777777;
+  color: white;
+  width: 20vw;
+  height: 5vh;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 100%;
+}
